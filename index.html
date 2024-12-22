@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Website</title>
+    <style>
+        body {
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            font-family: cursive;
+            background-image: linear-gradient(to bottom right, rgb(151, 151, 214), rgb(159, 233, 255));
+        }
+        h1{
+            color: rgb(255, 255, 255);
+            animation: glow 2s ease-in-out alternate infinite;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 20px #17c411;
+            }
+            100% {
+                text-shadow: 0 0 25px #ff3c00;
+            }
+        }
+        .snowflake {
+            position: absolute;
+            top: -30px;
+            font-size: 30px;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 10%;
+            animation-duration: 7s;
+        }
+        .snowflake:nth-child(2) {
+            left: 30%;
+            animation-duration: 5s;
+        }
+        .snowflake:nth-child(3) {
+            left: 50%;
+            animation-duration: 3s;
+        }
+        .snowflake:nth-child(4) {
+            left: 70%;
+            animation-duration: 5s;
+        }
+        .snowflake:nth-child(5) {
+            left: 90%;
+            animation-duration: 4s;
+        }
+
+        img
+         {
+            width: 300px;
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❄</div>
+    <h1>HAVE A HOLLY JOLLY CHRISTMAS</h1>
+    <img src = "https://images.immediate.co.uk/production/volatile/sites/30/2022/09/gingerbread-house-92008e2.jpg?quality=90&resize=556,505" alt = "">
+    <h2>from: me</h2>
+</body>
+</html>
