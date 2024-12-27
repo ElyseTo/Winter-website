@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winter Website</title>
@@ -9,11 +12,10 @@
             height: 100vh;
             overflow: hidden;
             text-align: center;
-            font-family: cursive;
-            background-image: linear-gradient(to bottom right, rgb(151, 151, 214), rgb(159, 233, 255));
+            font-family: Kaushan Script;
         }
-        h1{
-            color: rgb(255, 255, 255);
+        h1 {
+            color: rgb(0,0,0);
             animation: glow 2s ease-in-out alternate infinite;
         }
         @keyframes glow {
@@ -58,22 +60,69 @@
             left: 90%;
             animation-duration: 4s;
         }
-
-        img
-         {
-            width: 300px;
-         }
-         
+        img {
+            width: 200px;
+            animation: bounce 3s ease-in-out infinite; /* Bounce animation for the image */
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .bottom-animation {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            font-size: 40px;
+        }
+        .shark {
+            animation: move-shark 3s linear infinite;
+            position: relative;
+        }
+        @keyframes move-shark {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100vh);
+            }
+        }
+        .present {
+            animation: move-present 3s linear infinite reverse;
+            position: relative;
+        }
+        @keyframes move-present {
+            0% {
+                transform: translateX(100vh);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="snowflake">🎅</div>
+    <div class="snowflake">🎄</div>
+    <div class="snowflake">⛄</div>
+    <div class="snowflake">🎁</div>
     <div class="snowflake">❄</div>
-    <div class="snowflake">❄</div>
-    <div class="snowflake">❄</div>
-    <div class="snowflake">❄</div>
-    <div class="snowflake">❄</div>
-    <h1>HAVE A HOLLY JOLLY CHRISTMAS</h1>
-    <img src = "https://images.immediate.co.uk/production/volatile/sites/30/2022/09/gingerbread-house-92008e2.jpg?quality=90&resize=556,505" alt = "">
-    <h2>from: me</h2>
+    <h1>CHRISTMAS!!!</h1>
+    <img src="https://cdn.shopify.com/s/files/1/0280/0425/3828/files/4f3e607a886cade99c8ec709312ce9a04e4c6aab8d29bb42703d9904d8ef1629_300x@2x.jpg?v=1698599698" alt="">
+    <img src"https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/21f407e3-2624-4c06-992b-af35afdfc823/Reindeer%20dreamstime.jpeg?auto=compress%2Cformat&w=1440" alt = "reindeer image">
+    <h2>Christmas is on December 25! Things such as gingerbread, wreaths, ornaments, and candy canes are related to Christmas!</h2>
+    <h3>Yay! the shark is chasing the present!</h3>
+    <div class="bottom-animation">
+        <div class="shark">🦈</div>
+        <div class="present">🎁</div>
+    </div>
 </body>
 </html>
